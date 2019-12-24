@@ -1,6 +1,7 @@
 #ifndef Grafik_h                      // Grafik.h
 #define Grafik_h
 
+#include "Grafik.h"
 #include <vector>
 
 using namespace std;

@@ -9,28 +9,35 @@ using namespace std;
 #include "Kreis.h"
 #include "Text.h"
 
+void Tonerverbrauch(double dstrecke)
+{
+cout << "Tonerverbrauch:"
+     << dstrecke /* in  cm  */
+        * 10     /* g / m^2 */
+        * 0.0001 /* wg. m^2 */
+     << endl;
+}
 
 int main()
 {
-/* Samples */
-Punkt a(2.0,2.0);
-Punkt b(2.0,4.0);
-Punkt c(4.0,2.0);
-Punkt d(4.0,4.0);
-Kreis sK(a,3.0);
+/* Kreis */
+Punkt m(2.0,2.0);
+Kreis sK(m,3.0);
 Punkt punkt1(3.0,4.0);
-Rechteck quadrat(a,b,c,d);
-Linie linie1(a,punkt1);
-Text text1("Hello World");
+Linie linie1(m,punkt1);
 
 
+cout << endl;
+//
 Abbildung Abb;
 
 Abb.FuegeHinzu(&linie1);
-Abb.FuegeHinzu(&text1);
+Text Text1("Hello");
+Text Text2("World");
+Abb.FuegeHinzu(&Text1);
+Abb.FuegeHinzu(&Text2);
 Abb.FuegeHinzu(&sK);
-Abb.FuegeHinzu(&quadrat);
-Abb.FuegeHinzu(&punkt1);
 Abb.Zeichne();
+
 return 0;
 }

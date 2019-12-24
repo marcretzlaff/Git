@@ -5,7 +5,7 @@ using namespace std;
 #include "Linie.h"
 #include "Rechteck.h"
 #include "Kreis.h"
-
+#include "Grafik.h"
 
 int main()
 {
@@ -16,6 +16,7 @@ Punkt c(4.0,2.0);
 Punkt d(4.0,4.0);
 Kreis sK(a,3.0);
 Punkt punkt1(3.0,4.0);
+punkt1.Zeichne();
 Rechteck quadrat(a,b,c,d);
 Linie linie1(a,punkt1);
 cout << "Hello World" << endl;

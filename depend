@@ -1,4 +1,4 @@
-main.o: main.c Punkt.h Linie.h
-Punkt.o: Punkt.c Punkt.h
-Linie.o: Linie.c Linie.h
-
+main.o: main.cpp Punkt.h Linie.h Kreis.h
+Punkt.o: Punkt.cpp Punkt.h
+Linie.o: Linie.cpp Linie.h
+Kreis.o: Kreis.cpp Kreis.h

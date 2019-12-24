@@ -7,6 +7,7 @@ using namespace std;
 
 #include "Rechteck.h"
 #include "Kreis.h"
+#include "Text.h"
 
 int main()
 {
@@ -23,6 +24,8 @@ Linie linie1(a,punkt1);
 linie1.Zeichne();
 sK.Zeichne();
 quadrat.Zeichne();
+Text text1("Hello World");
+text1.Zeichne();
 
 return 0;
 }

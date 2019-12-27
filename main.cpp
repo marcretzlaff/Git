@@ -20,7 +20,24 @@ cout << "Tonerverbrauch:"
 
 int main()
 {
+/* Kreis */
+Punkt m(2.0,2.0);
+Kreis sK(m,3.0);
+Punkt punkt1(3.0,4.0);
+Linie linie1(m,punkt1);
 
+
+cout << endl;
+//
+Abbildung Abb;
+
+Abb.FuegeHinzu(&linie1);
+Text Text1("Hello");
+Text Text2("World");
+Abb.FuegeHinzu(&Text1);
+Abb.FuegeHinzu(&Text2);
+Abb.FuegeHinzu(&sK);
+Abb.Zeichne();
 
 return 0;
 }

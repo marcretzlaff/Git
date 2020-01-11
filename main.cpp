@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//moini
 #include "Punkt.h"
 #include "Linie.h"
 #include "Grafik.h"
